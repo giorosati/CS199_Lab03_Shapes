@@ -14,10 +14,10 @@
 using std::cout;
 
 //default constructor
-//Circle::Circle() : Shape(0)
-//{
-//	radius = -1;
-//}
+Circle::Circle() : Shape(0)
+{
+	radius = -1;
+}
 
 //normal case constructor
 Circle::Circle(double radiusIn = -1) : Shape(0)
@@ -31,6 +31,7 @@ Circle::~Circle()
 	cout << "Circle deconstructor has run.";
 }
 
+//returns area
 double Circle::area()
 {
 	if (radius == -1) return 0;
@@ -40,6 +41,7 @@ double Circle::area()
 	}
 }
 
+//returns perimeter
 double Circle::perimeter()
 {
 	if (radius == -1) return 0;

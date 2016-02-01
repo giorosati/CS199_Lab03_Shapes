@@ -45,7 +45,7 @@ double Shape::perimeter()
 	return - 1;
 }
 
-//function that will be typically overrided by childs function
+//function that returns the number of sides
 int Shape::getSides()
 {
 	return numSides;

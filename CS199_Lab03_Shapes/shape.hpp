@@ -19,12 +19,12 @@ protected:
 	int numSides;
 
 public:
-	Shape();     
-	Shape(int);
-	~Shape();
-	double area();
-	double perimeter();
-	int getSides();
+	Shape();				//default constructor
+	Shape(int);				//constructor with parameter
+	~Shape();				//deconstructor
+	double area();			//to be overridden by child classes
+	double perimeter();		//to be overridden by child classes
+	int getSides();			//returns the number of sides
 };
 
 #endif

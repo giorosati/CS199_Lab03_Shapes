@@ -19,11 +19,11 @@ private:
 	double radius;
 
 public:
-	//Circle();
-	Circle(double);
-	~Circle();
-	double area();
-	double perimeter();
+	Circle();				//default constructor
+	Circle(double);			//constructor with parameter
+	~Circle();				//deconstructor
+	double area();			//returns area
+	double perimeter();		//returns perimeter
 };
 
 #endif

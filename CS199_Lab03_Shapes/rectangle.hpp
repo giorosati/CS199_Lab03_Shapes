@@ -20,11 +20,13 @@ private:
 	double side2;
 
 public:
-	//Rectangle();
-	Rectangle(double, double);
-	~Rectangle();
-	double area();
-	double perimeter();
+	Rectangle();				//default constructor
+	Rectangle(double, double);  //constructor with parameters
+	~Rectangle();				//deconstructor
+	double area();				//returns area
+	double perimeter();			//returns perimeter
+	int getSide1();				//returns side1 value
+	int getSide2();				//returns side2 value
 };
 
 #endif

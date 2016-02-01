@@ -14,14 +14,14 @@
 using std::cout;
 
 //default constructor
-//Rectangle::Rectangle() : Shape(4)
-//{
-//	side1 = -1;
-//	side2 = -1;
-//}
+Rectangle::Rectangle() : Shape(4)
+{
+	side1 = -1;
+	side2 = -1;
+}
 
-//normal case constructor
-Rectangle::Rectangle(double side1In = -1, double side2In = -1) : Shape(4)
+//normal case constructor w/default values
+Rectangle::Rectangle(double side1In = -1, double side2In =-1) : Shape(4)
 {
 	side1 = side1In;
 	side2 = side2In;
@@ -33,6 +33,7 @@ Rectangle::~Rectangle()
 	cout << "Rectangle deconstructor has run.";
 }
 
+//calculates and returns area
 double Rectangle::area()
 {
 	if (side1 == -1 || side2 == -1) return 0;
@@ -42,6 +43,7 @@ double Rectangle::area()
 	}
 }
 
+//calculates and returns perimeter
 double Rectangle::perimeter()
 {
 	if (side1 == -1 || side2 == -1) return 0;
@@ -49,4 +51,15 @@ double Rectangle::perimeter()
 	{
 		return (2 * side1) + (2 * side2);
 	}
+}
+
+//getters for testing
+int Rectangle::getSide1()
+{
+	return side1;
+}
+
+int Rectangle::getSide2()
+{
+	return side2;
 }
